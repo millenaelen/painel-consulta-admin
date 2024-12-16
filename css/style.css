@@ -1,0 +1,51 @@
+.olho{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    cursor: pointer; /*muda o ponteiro do mouse, p ficar igual a um link porem sem ser link*/
+}
+
+
+/*remover o 'olho' do edge*/
+::-ms-reveal{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu a:hover{
+    box-shadow: 0 1px 0px purple;
+}
+
+.list-group-item:hover{
+    background-color:#efe
+    }
+
+.btn-menu{
+    position: absolute;
+    right: 12px;
+    top: 16px;
+}
+
+.error{  /*para mudar a cor da mensagem de obrigatório no formulário - para saber o nome daclasse é só ir no inspecionar*/
+    color: red;
+    font-size: 12px;
+}
+
+/*para telas iguais ou maiores que 768px (md)*/
+@media (min-width: 768px){
+
+    .navegacao{
+        min-height: 100vh; /*vh-100 é p deixar ocupando o navegador td, mas se o lado direito for maior, é bom usar min-height p a altura ser no minimo a tela toda*/
+    }
+}
+
+/*
+@media (max-width: 769px){
+
+    .menu{
+        display: none;
+    }
+}*/
